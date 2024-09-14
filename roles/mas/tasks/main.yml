@@ -1,0 +1,20 @@
+---
+# tasks file for roles/mas
+
+- name: "Install MAS applications"
+  community.general.mas:
+    id: "{{ mas_apps }}"
+    state: "present"
+  tags: [ "always" ]
+
+- name: "Install MAS applications (Home)"
+  community.general.mas:
+    id: "{{ mas_apps_home }}"
+    state: "present"
+  tags: [ "never", "home" ]
+
+- name: "Install MAS applications (Work)"
+  community.general.mas:
+    id: "{{ mas_apps_work }}"
+    state: "present"
+  tags: [ "never", "work" ]

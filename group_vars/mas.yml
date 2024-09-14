@@ -1,0 +1,34 @@
+mas_apps:
+  - 1365531024  # 1Blocker
+  - 1569813296  # 1Password for Safari
+  - 937984704   # Amphetamine
+  - 1091189122  # Bear
+  - 1452453066  # Hidden Bar
+  - 1462114288  # Grammarly for Safari
+  - 6444602274  # Ivory
+  - 288545208   # Instapaper
+  - 1481302432  # Instapaper Save
+  - 1622835804  # Kagi Search
+  - 462058435   # Microsoft Excel
+  - 823766827   # Microsoft OneDrive
+  - 462062816   # Microsoft PowerPoint
+  - 462054704   # Microsoft Word
+  - 1357379892  # Menu Bar Controller for Sonos
+  - 1055273043  # PDF Expert
+  - 967805235   # Paste
+  - 1276493162  # reMarkable
+  - 1606145041  # Sleeve
+  - 1549370672  # Save to Raindrop.io
+
+mas_apps_home:
+  - 611658502   # Boxy SVG
+  - 1287239339  # ColorSlurp
+  - 1542229474  # FileBrowser Pro
+  - 1450716465  # ImageOptim
+  - 1136220934  # Infuse
+  - 1507782672  # Pixea
+  - 6475835429  # SimpleLogin for Safari
+
+mas_apps_work:
+  - 985367838   # Microsoft Outlook
+  - 1274495053  # Microsoft To Do

@@ -1,0 +1,32 @@
+---
+# tasks file for roles/homebrew
+
+- name: "Install taps"
+  community.general.homebrew_tap:
+    name: "{{ homebrew_taps }}"
+    state: "present"
+  tags: [ "always" ]
+
+- name: "Install cli apps"
+  community.general.homebrew:
+    name: "{{ homebrew_cli }}"
+    state: "present"
+  tags: [ "always" ]
+
+- name: "Install casks"
+  community.general.homebrew_cask:
+    name: "{{ homebrew_cask }}"
+    state: "present"
+  tags: [ "always" ]
+
+- name: "Install casks (Home)"
+  community.general.homebrew_cask:
+    name: "{{ homebrew_cask_home }}"
+    state: "present"
+  tags: [ "never", "home" ]
+
+- name: "Install casks"
+  community.general.homebrew_cask:
+    name: "{{ homebrew_cask_work }}"
+    state: "present"
+  tags: [ "never", "work" ]

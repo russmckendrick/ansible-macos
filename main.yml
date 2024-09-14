@@ -1,0 +1,13 @@
+---
+
+- name: "Deploy and configure our local machine"
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  vars_files:
+    - "group_vars/brew.yml"
+    - "group_vars/mas.yml"
+
+  roles:
+    - "homebrew"
+    - "mas"
